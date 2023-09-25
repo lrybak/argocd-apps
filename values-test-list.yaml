@@ -1,0 +1,10 @@
+env: test
+components:
+  - name: foo
+    version: 1.0
+  - name: bar
+    version: 1.2
+  - name: baz
+    version: 1.2.1
+  - name: foo2
+    version: 1.2.2
