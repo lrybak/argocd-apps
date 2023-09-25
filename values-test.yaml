@@ -1,0 +1,8 @@
+env: test
+components:
+  foo:
+    version: 1.0
+  bar:
+    version: 1.2
+  baz:
+    version: 1.2.1

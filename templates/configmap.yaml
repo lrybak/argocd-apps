@@ -1,0 +1,14 @@
+{{- $root := . -}}
+{{- range $appComponent, $data := .Values.components }}
+{{- if eq $root.Values.selected $appComponent }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ $appComponent }}-configmap
+data:
+  app-config.yaml: |-
+    [db]
+    con=localhost
+{{- end }}
+{{- end }}
